@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QR Code Generator</title>
+
+
+    <link href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        * {
+            font-family: Montserrat;
+        }
+    </style>
+</head>
+
+<body class="mx-auto container absolute top-20 left-0 right-0 bottom-0"
+    style="display: flex; flex-direction: column; height:max-content; align-items: center; justify-content: center; ">
+    <img src=<%=src%> alt="QR Code Image">
+    <p>Scan the QR Code to access the data!</p>
+    <a href="/"><button type="button" class="button button-red mt-5" data-ripple-light="true">Back</button></a>
+    <br>
+</body>
+
+</html>

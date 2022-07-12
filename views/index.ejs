@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QR Code Generator</title>
+
+    <!-- stylesheet -->
+    <link href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    </style>
+</head>
+
+<body class="bg-grey-50 absolute top-40 left-96 flex ">
+   
+    <div class="container mb-0 justify-center item-center  relative " >
+        <h1 class="justify-center -ml-20 item-center mb-10 animate-pulse">QR CODE  GENERATOR</h1>
+        <form class="form shadow shadow-lg p-10 " style="  display: flex;  width: 20rem; flex-direction: column; align-items: center; justify-content: center;" action="/scan" method="POST" >
+            
+            <h4 class="text-grey-800 animate-bounce">Generate <small class=" cursor-pointer font-md text-red-600 shadow shadow-blue-500/40 hover:shadow-indigo-500/40 rounded-lg p-2 " style="font-size: 30px;" >QR</small> Code!</h4>
+            <div class="input-group-outline input-group mt-4">
+                <label class="form-label">URL or Text</label>
+                <input name="url" type="text" class="form-control" required/>
+              </div>
+            <br>
+            <button type="submit" class="button button-red w-full font-bold text-md" value="Get QR">Generate</button>
+        </form>
+        <a href="https://imgbb.com/" class=" absolute right-0 ml-36  top-40 pl-10" ><img src="https://i.ibb.co/6gD1yMP/ankitkumartech.png" alt="ankitkumartech" border="0"></a>   
+    </div>
+
+   
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/input.js"></script>
+
+</body>
+
+</html>
